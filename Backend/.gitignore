@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment files & API keys
+.env
+.env.*
+*.env
+!.env.example
+
+# Uploaded student files
+uploads/*
+!uploads/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
