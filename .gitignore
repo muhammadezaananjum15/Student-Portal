@@ -1,28 +1,34 @@
+# ==========================================
+# Unified Git Ignore (Frontend + Backend)
+# ==========================================
+
 # Dependencies
 node_modules/
-*/node_modules/
+frontend/node_modules/
+Backend/node_modules/
 .pnp/
 .pnp.js
 
-# Environment & Secrets
+# Environment & Secrets (MongoDB, API keys, etc.)
 .env
 .env.*
 *.env
 !.env.example
 
-# Production & Build Artifacts
+# Production & Build Outputs
 build/
 dist/
 out/
 frontend/build/
 frontend/dist/
 
-# File Uploads (Backend user files)
-uploads/
+# File Uploads (Backend Multer student uploads)
+uploads/*
 Backend/uploads/*
 !Backend/uploads/.gitkeep
+!uploads/.gitkeep
 
-# Logs
+# Logs & Debugging
 logs/
 *.log
 npm-debug.log*
@@ -34,13 +40,13 @@ pnpm-debug.log*
 coverage/
 .nyc_output/
 
-# OS Generated Files
+# Operating System Metadata
 .DS_Store
 Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# Editor & IDE Directories
+# IDE & Editor Files
 .vscode/
 .idea/
 *.swp
